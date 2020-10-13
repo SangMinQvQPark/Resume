@@ -27,6 +27,9 @@
   --weight-bold: 700;
   --weight-semi-bold: 600;
   --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 4px;
 }
 
 /* Typography */
@@ -57,4 +60,47 @@ p {
   font-weight: var(--weight-regular);
   color: var(--color-black);
   margin: 4px 0;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  padding: 16px;
+}
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  cursor: default;
+}
+
+.navbar__menu {
+}
+a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__menu_item {
+  list-style: none;
+  padding: 8px 12px;
+  margin: 0px 4px;
+  cursor: pointer;
+  border-radius: var(--size-border-radius);
+}
+.navbar__menu_item:hover {
+  background-color: var(--color-dark-pink);
+}
+.navbar__menu_item.active {
+  border: 1px solid var(--color-white);
+}
+.navbar__logo {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
 }
