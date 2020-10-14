@@ -54,7 +54,12 @@ h3 {
   color: var(--color-black);
   margin: 8px 0;
 }
-
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
 p {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
@@ -62,6 +67,7 @@ p {
   margin: 4px 0;
 }
 
+/* Nav */
 #navbar {
   display: flex;
   justify-content: space-between;
@@ -103,4 +109,32 @@ a {
 .navbar__logo {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
+}
+
+/* Home */
+#home {
+  background: center/cover no-repeat
+    url("image/homebackground-200515-154505.png");
+  padding: 40px;
+  text-align: center;
+}
+.home__avatar {
+  width: 800px;
+  height: 600px;
+  border-radius: 65%;
+  border: 3px solid var(--color-light-white);
+}
+.home__title,
+.home__description {
+  color: var(--color-white);
+}
+
+.home__contact {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-white);
+  color: var(--color-white);
+  border-radius: var(--size-border-radius);
 }
