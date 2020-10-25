@@ -1,247 +1,384 @@
-<!-- @format -->
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sangmin's portfolio</title>
-    <meta name="autuor" content="Sang-min" />
+    <title>Ellie's Portfolio</title>
     <meta
       name="description"
-      content="This is a page such beging that super nice story born"
+      content="Portfolio for world-renowned software engineer Ellie"
     />
-    <link rel="icon" href="" type="image/png" />
-    <link rel="stylesheet" href="index.css" />
-    <script src="main.js"></script>
+    <meta name="author" content="Ellie" />
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
     <script
-      src="https://kit.fontawesome.com/7afafc7d65.js"
+      src="https://kit.fontawesome.com/9eb162ac0d.js"
       crossorigin="anonymous"
     ></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <!-- NavBar -->
-    <nav id="navbar" >
+    <!-- Navbar -->
+    <nav id="navbar">
       <div class="navbar__logo">
-        <i class="fas fa-running"></i>
-        <a href="#">독서달리기</a>
+        <i class="fab fa-diaspora"></i>
+        <a href="#">Ellie</a>
       </div>
       <ul class="navbar__menu">
-        <li class="navbar__menu_item active">독서달리기 나침반</li>
-        <li class="navbar__menu_item">독서달리기 모임은?</li>
-        <li class="navbar__menu_item">진행 중인 동아리</li>
-        <li class="navbar__menu_item">독달 가족들의 재능</li>
-        <li class="navbar__menu_item">독달 가족들의 추천</li>
-        <li class="navbar__menu_item">독달 연락처들</li>
+        <li class="navbar__menu__item active" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
+        <li class="navbar__menu__item" data-link="#skills">Skills</li>
+        <li class="navbar__menu__item" data-link="#work">My work</li>
+        <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li>
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
       </ul>
-    </nav>
-    <!-- Home -->
-    <section id="home" >
-      <img
-        src="image/logo/Blue and White Brushstroke Running Sports YouTube Video Intro.jpg"
-        ,
-        alt="Error, We need a picture about Running Poster"
-        class="home__avatar"
-      />
-      <h1 class="home__title">반갑습니다. 독서달리기입니다..</h1>
-      <h3 class="home__description">
-        이 모임은 더 나은 삶을 향해 다양한 방식으로 달리는 곳입니다. 독서를 거쳐
-        다양한 사람들과 이어져 유대감을 형성합니다. 선한 사회에 기여하고 재능을
-        발견하는데 공동 목표를 두고 있습니다.
-      </h3>
-      <button class="home__contact">
-        지금 여기, 당신의 재능과 사회에 기여해보세요!
+      <!-- Toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
       </button>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="home__container">
+        <img
+          src="imgs/profile.jpg"
+          alt="Ellie's profile photo"
+          class="home__avatar"/> 
+        <h1 class="home__title">Hello, <br />I'm Dream Coder</h1>
+        <h2 class="home__description">
+         A Software Engineer currently residing in Sydney, Australia.
+        </h2>
+        <button class="home__contact">Contact Me</button>
+      </div>
     </section>
+
     <!-- About -->
-    <section id="about" class="section">
-      <h1>독서달리기 나침반</h1>
-      <p>~를 해왔고 ~를 만든 적이 있다.</p>
-      <div class="about__directions">
-        <div class="direction">
-          <div class="direction__icon"><i class="far fa-edit"></i></div>
-          <div class="direction__title">공동 성장</div>
-          <div class="direction__description">경제, 사회, 역사 등</div>
-        </div>
-        <div class="direction">
-          <div class="direction__icon"><i class="fab fa-aws"></i></div>
-          <div class="direction__title">공동 성장</div>
-          <div class="direction__description">경제, 사회, 역사 등</div>
-        </div>
-        <div class="direction">
-          <div class="direction__icon"><i class="fab fa-facebook"></i></div>
-          <div class="direction__title">공동 성장</div>
-          <div class="direction__description">경제, 사회, 역사 등</div>
-        </div>
-      </div>
-      <div class="about__projects">
-        <div class="project">
-          <img
-            src="image/projects/Red and Yellow Cartoony Theater Masks Actor Business Card.jpg"
-            alt=""
-            class="project__logo"
-          />
-          <div class="project__description">
-            <p class="project__name">철학 - 사랑을 향하여 동아리</p>
-            <p class="project__period">2020.10.01 ~ Now</p>
-          </div>  
-        </div>
-        <div class="project">
-          <img
-            src="image/projects/Navy and Cream Christmas Village Photo Card.jpg"
-            alt=""
-            class="project__logo"
-          />
-          <div class="project__description">
-            <p class="project__name">철학 - 사랑을 향하여 동아리</p>
-            <p class="project__period">2020.10.01 ~ Now</p>
+    <section id="about" class="section section__container">
+      <h1>About me</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure possimus
+        rem sequi? Nihil, est impedit dignissimos consequatur totam, odit
+        deserunt doloremque laudantium similique corrupti, iusto optio rerum in
+        deleniti officia.
+      </p>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h2 class="major__title">Front-end</h2>
+          <div class="major__description">
+            HTML, CSS, JavaScript, TypeScript,
+            <br />React, Vue, Web APIs
           </div>
         </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-mobile"></i>
+          </div>
+          <h2 class="major__title">Mobile</h2>
+          <p class="major__description">
+            Android, iOS, React Native, Flutter,
+            <br />Java, Swift, Kotlin
+          </p>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h2 class="major__title">Back-end</h2>
+          <p class="major__description">
+            Java, JavaScript, Go, NodeJS,
+            <br />Rest APIs, GraphGL
+          </p>
+        </div>
+      </div>
+      <div class="about__jobs">
+        <div class="job">
+          <img
+            src="imgs/jobs/logo-samsung.png"
+            alt="samsung"
+            class="job__logo"
+          />
+         <div class="job__description">
+          <p class="job__name">
+            Currently working at Samsung as Software Engineer
+          </p>
+          <p class="job__period">2019 Sept - Until now</p>
+         </div>
+        </div>
+        <div class="job">
+          <img
+            src="imgs/jobs/logo-samsung.png"
+            alt="samsung"
+            class="job__logo"
+          />
+          <div class="job__description">
+            <p class="job__name">
+              Currently working at Samsung as Software Engineer
+            </p>
+            <p class="job__period">2019 Sept - Until now</p>
+           </div>
       </div>
     </section>
+
     <!-- Skills -->
-    <section id="ongoing__teams" class="section">
-      <h1>진행 중인 동아리</h1>
-      <h2>000님의 재능을 키우고, 나누어주시면 감사하겠습니다.</h3>
-      <p>현재 동아리는 0개 진행 중이며, 올해 ~ 동아리 ~를 했습니다.</p>
-      div.teams>(
-      <div class="teams__left">
-        <h3 class="teams__title">
-          Teams
-          <!-- Team -->
-          <div class="team">
-            <div class="team__description">
-              <span>한 마음 소통하기</span><span>100명</span>
-            </div>
-          </div>
-          <div class="team__bar">
-            <div class="team__value"></div>
-          </div>
-          <!-- Team -->
-          <div class="team">
-            <div class="team__description">
-              <span>한 마음 소통하기</span><span>100명</span>
-            </div>
-          </div>
-          <div class="team__bar">
-            <div class="team__value"></div>
-          </div>
-        </h3>
-      </div>
-    </section>
-    <!-- Work -->
-    <section class="work section">
-      <h1>독서달리기 재능</h1>
-      <h3>독서달리기는 공공의 이익을 지향합니다.</p>
-      <div class="section__categories">
-        <button class="categorie__btn" data-filter="*">All
-          <span class="category__count">8</span>
-        </button>
-        <button class="categorie__btn" data-filter="front-end">FE
-          <span class="category__count">3</span>
-        </button>
-        <button class="categorie__btn" data-filter="back-end">BE
-          <span class="category__count">3</span>
-        </button>
-        <button class="categorie__btn" data-filter="mobile">MB
-          <span class="category__count">2</span>
-        </button>
-      </div>
-      <div class="section__projects">
-        <a href="" class="project" data-type="back-end">
-          <img src="image/projects/youtube.png" alt="" class="project__img">
-          <div class="project__description">
-            <h3>project</h3>
-            <span>explanation</span>
-          </div>
-        </a>
-        <a href="" class="project" data-type="back-end">
-          <img src="image/projects/youtube.png" alt="" class="project__img">
-          <div class="project__description">
-            <h3>project</h3>
-            <span>explanation</span>
-          </div>
-        </a>
-        <a href="" class="project" data-type="back-end">
-          <img src="image/projects/youtube.png" alt="" class="project__img">
-          <div class="project__description">
-            <h3>project</h3>
-            <span>explanation</span>
-          </div>
-        </a>
-        <a href="" class="project" data-type="back-end">
-          <img src="image/projects/youtube.png" alt="" class="project__img">
-          <div class="project__description">
-            <h3>project</h3>
-            <span>explanation</span>
-          </div>
-        </a>
-        <a href="" class="project" data-type="back-end">
-          <img src="image/projects/youtube.png" alt="" class="project__img">
-          <div class="project__description">
-            <h3>project</h3>
-            <span>explanation</span>
-          </div>
-        </a>
-        <a href="" class="project" data-type="back-end">
-          <img src="image/projects/navbar.png" alt="" class="project__img">
-          <div class="project__description">
-            <h3>project</h3>
-            <span>explanation</span>
-          </div>
-        </a>
-        <a href="" class="project" data-type="back-end">
-          <img src="image/projects/youtube.png" alt="" class="project__img">
-          <div class="project__description">
-            <h3>project</h3>
-            <span>explanation</span>
-          </div>
-        </a>
-        <a href="" class="project" data-type="back-end">
-          <img src="image/projects/youtube.png" alt="" class="project__img">
-          <div class="project__description">
-            <h3>project</h3>
-            <span>explanation</span>
-          </div>
-        </a>
-      </div>
-    </section>
-    <!-- Testimonials -->
-    <section class="testimonials section">
+    <section id="skills" class="section">
       <div class="section__container">
-        <h1>독달 가족들의 추천</h1>
-        <p>Story</p>
-        <div class="testimonial">
-          <img src="image/testimonial/people1.jpg" alt="people" class="testimonial__avatar">
-          <div class="testimonal__speech-bubble">
-            <p>lorem</p>
-            <p class="name">Samsung<a href="">Sangmin</a></p>
+        <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>
+          Experience with all phases of the software life-cycle. Passion for
+          learning new technologies. Capable of working within a team environment
+          and independently. Ability to plan and time schedule, work under strict
+          time pressure and adapt quickly when needed.
+        </p>
+        <div class="skillset">
+          <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skill">
+              <div class="skill__description">
+                <span>HTML</span>
+                <span>99%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 99%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>CSS</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>JavaScript</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>TypeScript</span>
+                <span>80%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 80%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>React</span>
+                <span>88%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 88%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>NodeJS</span>
+                <span>77%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 77%;"></div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="testimonial">
-          <img src="image/testimonial/people1.jpg" alt="people" class="testimonial__avatar">
-          <div class="testimonal__speech-bubble">
-            <p>lorem</p>
-            <p class="name">Samsung<a href="">Sangmin</a></p>
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">Tools</h3>
+              <ul class="tools__list">
+                <li><span>Visual Studio Code</span></li>
+                <li><span>IntelliJ</span></li>
+                <li><span>Android Studio Code</span></li>
+                <li><span>iOS development tools</span></li>
+                <li><span>Sketch app</span></li>
+              </ul>
+            </div>
+            <div class="etc">
+              <h3 class="skillset__title">Etc</h3>
+              <ul class="etc__list">
+                <li><span>Git</span></li>
+                <li><span>Scrum master</span></li>
+                <li><span>Math</span></li>
+              </ul>
+            </div>
           </div>
-        </div>
-    </div>
+      </div>
     </section>
-    <!-- Contact -->
-    <section class="contact section">
-      <h1>함께 여행할래요?</h1>
-      <h2>Dokdal@gamil.com</h2>
-      <div class="contact__links">
-        <a href="#"><i class="fab fa-github"></i>
+
+    <!-- Work -->
+    <section id="work" class="section">
+     <div class="section__container">
+      <h1>My work</h1>
+      <h3>Projects</h3>
+      <div class="work__categories">
+        <button class="category__btn selected" data-filter="*">
+          All <span class="category__count">8</span>
+        </button>
+        <button class="category__btn" data-filter="front-end">
+          Front-end <span class="category__count">3</span>
+        </button>
+        <button class="category__btn" data-filter="back-end">
+          Back-end <span class="category__count">3</span>
+        </button>
+        <button class="category__btn" data-filter="mobile">
+          Mobile <span class="category__count">2</span>
+        </button>
+      </div>
+      <div class="work__projects">
+        <a href="" class="project" target="blank" data-type="front-end">
+          <img
+            src="imgs/projects/youtube.png"
+            alt="Youtube"
+            class="project__img"
+          />
+          <div class="project__description">
+            <h3>Youtube Site</h3>
+            <span>Clone coding with HTML, CSS</span>
+          </div>
         </a>
-        <a href="#"><i class="fab fa-github"></i>
+        <a
+          href="https://github.com/dream-ellie/responsive-nav-bar"
+          class="project"
+          data-type="front-end"
+          target="blank"
+        >
+          <img
+            class="project__img"
+            src="imgs/projects/navbar.png"
+            alt="navbar"
+          />
+          <div class="project__description">
+            <h3>Responsive Navbar</h3>
+            <span>HTML, CSS with media query</span>
+          </div>
+        </a>
+        <a
+          href="https://github.com/dream-ellie/responsive-nav-bar"
+          class="project"
+          data-type="front-end"
+          target="blank"
+        >
+          <img class="project__img" src="imgs/projects/game.png" alt="navbar" />
+          <div class="project__description">
+            <h3>Shopping mall game</h3>
+            <span>HTML, CSS, JavaScript, Json</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="back-end">
+          <img class="project__img" src="imgs/projects/game.png" alt="" />
+          <div class="project__description">
+            <h3>Project</h3>
+            <span>Explanation</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="back-end">
+          <img class="project__img" src="imgs/projects/game.png" alt="" />
+          <div class="project__description">
+            <h3>Project</h3>
+            <span>Explanation</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="mobile">
+          <img class="project__img" src="imgs/projects/game.png" alt="" />
+          <div class="project__description">
+            <h3>Project</h3>
+            <span>Explanation</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="mobile">
+          <img class="project__img" src="imgs/projects/game.png" alt="" />
+          <div class="project__description">
+            <h3>Project</h3>
+            <span>Explanation</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="mobile">
+          <img class="project__img" src="imgs/projects/game.png" alt="" />
+          <div class="project__description">
+            <h3>Project</h3>
+            <span>Explanation</span>
+          </div>
         </a>
       </div>
-      <div class="contact__rights">2020 Dokdal - All rights reserved</div>
+     </div>
     </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+   <div class="section__container">
+    <h1>Testimonials</h1>
+    <h3>See what they say about me</h3>
+    <div class="testimonials">
+      <div class="testimonial">
+        <img
+          src="imgs/testimonial/people1.jpg"
+          alt="People"
+          class="testimonial__avatar"
+        />
+        <div class="testimonial__speech-bubble">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+            fuga libero nulla eveniet aperiam laborum, quis provident
+            quibusdam officiis reprehenderit, placeat neque perspiciatis vero
+            explicabo tempora, dignissimos accusantium inventore ducimus!
+          </p>
+          <p class="name"><a href="">Ellie</a> / Samsung</p>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial__speech-bubble">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+            fuga libero nulla eveniet aperiam laborum, quis provident
+            quibusdam officiis reprehenderit, placeat neque perspiciatis vero
+            explicabo tempora, dignissimos accusantium inventore ducimus!
+          </p>
+          <p class="name"><a href="">Ellie</a> / Samsung</p>
+        </div>
+        <img
+        src="imgs/testimonial/people1.jpg"
+        alt="People"
+        class="testimonial__avatar"
+      />
+      </div>
+    </div>
+   </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h1 class="contact__title">Let's talk</h1>
+      <h2 class="contact__email">dream.coder.ellie@gmail.com</h2>
+      <div class="contact__links">
+        <a href="https://github.com/dream-ellie" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="#" target="_blank">
+          <i class="fa fa-linkedin-square"></i>
+        </a>
+      </div>
+      <p class="contact__rights">
+        2020 Dream Coding Ellie - All rights reserved
+      </p>
+    </section>
+
+    <!-- Arrow up -->
+    <button class="arrow-up">
+      <i class="fas fa-arrow-up"></i>
+    </button>
   </body>
 </html>
